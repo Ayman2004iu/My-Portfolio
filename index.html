@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayman Ibrahim Seddik — Backend Developer specializing in Java, Spring Boot, REST APIs, and scalable systems.">
+  <meta name="keywords" content="Backend Developer, Java, Spring Boot, REST API, Portfolio, Ayman Seddik">
+  <meta name="author" content="Ayman Ibrahim Seddik">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Ayman Ibrahim Seddik | Backend Developer">
+  <meta property="og:description" content="Backend Developer | Java | Spring Boot | Building scalable APIs and systems.">
+  <meta property="og:type" content="website">
+  <title>Ayman Ibrahim Seddik | Backend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Devicon for tech stack icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-outline" aria-hidden="true"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Ayman<span>.</span></div>
+      <div class="preloader-bar"><span></span></div>
+      <p class="preloader-text">Loading portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Floating Background Blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">Ayman<span>.</span></a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon theme-icon-dark"></i>
+          <i class="fas fa-sun theme-icon-light"></i>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero section" id="home">
+      <div class="hero-particles" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <p class="hero-greeting">
+            <span class="wave">👋</span> Hello, I'm
+          </p>
+          <h1 class="hero-name">
+            Ayman Ibrahim <span class="gradient-text">Seddik</span>
+          </h1>
+          <p class="hero-role">
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </p>
+          <p class="hero-description">
+            Passionate Backend Developer focused on building scalable REST APIs,
+            secure authentication systems, and robust enterprise applications with
+            Java &amp; Spring Boot. Ranked 1st in my department with hands-on experience
+            in full-stack development and database design.
+          </p>
+          <div class="hero-cta">
+            <!-- Add CV PDF link -->
+            <a href="./Data/Ayman_Ibrahim_CV.pdf" class="btn btn-primary btn-ripple" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#projects" class="btn btn-outline btn-ripple">
+              <i class="fas fa-code"></i> View Projects
+            </a>
+          </div>
+          <div class="hero-social">
+            <!-- Add GitHub link -->
+            <a href="https://github.com/Ayman2004iu" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <!-- Add LinkedIn link -->
+            <a href="https://linkedin.com/in/ayman-ibrahim-8b48aa28a" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:ayman.ibrahim.seddik@gmail.com?subject=Job%20Opportunity&body=Hello%20Ayman,%20I%20saw%20your%20portfolio" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="200">
+          <div class="hero-image-wrapper">
+            <div class="hero-glow"></div>
+            <div class="hero-image-card glass-card">
+              <img src="./Data/11.jpg" alt="Ayman Ibrahim" class="profile-image">
+            </div>
+            <!-- Floating tech icons -->
+            <div class="floating-icon fi-1" aria-hidden="true"><i class="devicon-java-plain colored"></i></div>
+            <div class="floating-icon fi-2" aria-hidden="true"><i class="devicon-spring-plain colored"></i></div>
+            <div class="floating-icon fi-3" aria-hidden="true"><i class="devicon-mysql-plain colored"></i></div>
+            <div class="floating-icon fi-4" aria-hidden="true"><i class="devicon-docker-plain colored"></i></div>
+            <div class="floating-icon fi-5" aria-hidden="true"><i class="fab fa-git-alt"></i></div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Crafting <span class="gradient-text">Scalable</span> Backend Solutions</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Computer Science graduate from Zagazig University, ranked
+              <strong>1st in my department</strong>, with a deep passion for backend
+              engineering and building systems that scale.
+            </p>
+            <p>
+              My career goal is to become an expert backend engineer specializing in
+              microservices, cloud-native architectures, and high-performance APIs. I
+              thrive on solving complex problems — from designing database schemas to
+              implementing secure authentication with JWT and Spring Security.
+            </p>
+            <p>
+              Whether it's a hospital management system or a banking API, I focus on
+              clean code, SOLID principles, and delivering production-ready solutions
+              that recruiters and teams can trust.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-ripple">Let's Connect</a>
+          </div>
+
+          <div class="about-stats reveal" data-delay="150">
+            <div class="stat-card glass-card shine-hover">
+              <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card glass-card shine-hover">
+              <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+              <span class="stat-number" data-target="25">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-card glass-card shine-hover">
+              <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Achievements</span>
+            </div>
+            <div class="stat-card glass-card shine-hover">
+              <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card glass-card shine-hover">
+              <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-label">Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+        </header>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card shine-hover">
+              <div class="edu-card-header">
+                <div class="edu-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <span class="edu-badge">Ranked 1st in Department</span>
+                  <h3>Bachelor of Science in Computer Science and Physics</h3>
+                  <p class="edu-university">Zagazig University</p>
+                </div>
+              </div>
+              <div class="edu-meta">
+                <span><i class="far fa-calendar"></i> 2021 — 2025</span>
+                <span><i class="fas fa-map-marker-alt"></i> Zagazig, Egypt</span>
+              </div>
+              <p class="edu-desc">
+                Comprehensive foundation in algorithms, data structures, physics,
+                and software engineering with top academic performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Achievements</span>
+          <h2 class="section-title">
+            Academic <span class="gradient-text">Achievements</span>
+          </h2>
+        </header>
+
+        <div class="cert-grid">
+
+          <!-- First Place -->
+          <article class="cert-card glass-card shine-hover reveal">
+            <div class="cert-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+
+            <h3>1st Place in Department</h3>
+
+            <p>Zagazig University · 2025</p>
+
+            <a href="./Data/first-place.jpg"
+              target="_blank"
+              class="cert-btn btn-ripple">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </article>
+
+          <!-- Graduation Project -->
+          <article class="cert-card glass-card shine-hover reveal" data-delay="100">
+            <div class="cert-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+
+            <h3>2nd Place in Graduation Project</h3>
+
+            <p>Graduation Project Competition · 2025</p>
+
+            <a href="./Data/graduation-project.jpg"
+              target="_blank"
+              class="cert-btn btn-ripple">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        </header>
+
+        <div class="exp-timeline">
+          <article class="exp-card glass-card shine-hover reveal">
+            <div class="exp-icon">
+              <!-- Replace with company logo -->
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="exp-content">
+              <span class="exp-date">Jul 2024 — Aug 2024</span>
+              <h3>UI/UX Design Intern</h3>
+              <p class="exp-company">Zagazig University</p>
+              <span class="exp-type"><i class="fas fa-building"></i> On-site</span>
+              <p class="exp-desc">
+                Designed user interfaces and improved UX workflows for university digital platforms.
+              </p>
+            </div>
+          </article>
+
+          <article class="exp-card glass-card shine-hover reveal" data-delay="100">
+            <div class="exp-icon">
+              <!-- Replace with company logo -->
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="exp-content">
+              <span class="exp-date">May 2023 — Aug 2023</span>
+              <h3>Full-stack PHP Developer Intern</h3>
+              <p class="exp-company">Bravo</p>
+              <span class="exp-type"><i class="fas fa-building"></i> On-site</span>
+              <p class="exp-desc">
+                Built full-stack web applications using PHP, Laravel, and MySQL with RESTful APIs.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Certifications</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Credentials</span></h2>
+        </header>
+
+        <div class="cert-grid">
+          <article class="cert-card glass-card shine-hover reveal">
+            <div class="cert-icon"><i class="fas fa-server"></i></div>
+            <h3>MEAN Stack Training</h3>
+            <p>NTI · 2026 . In Progress</p>
+            <!-- Add certificate link -->
+            <a href="#" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+          <article class="cert-card glass-card shine-hover reveal" data-delay="50">
+            <div class="cert-icon"><i class="devicon-java-plain colored"></i></div>
+            <h3>Java Development SE</h3>
+            <p>Mahara Tech · 2025</p>
+            <a href="./Data/java SE.pdf" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+          <article class="cert-card glass-card shine-hover reveal" data-delay="100">
+            <div class="cert-icon"><i class="fas fa-database"></i></div>
+            <h3>JDBC</h3>
+            <p>Mahara Tech · 2025</p>
+            <a href="./Data/JDBC.pdf" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+          <article class="cert-card glass-card shine-hover reveal" data-delay="150">
+            <div class="cert-icon"><i class="fas fa-table"></i></div>
+            <h3>Database Fundamentals</h3>
+            <p>Mahara Tech · 2025</p>
+            <a href="./Data/db.pdf" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+          <article class="cert-card glass-card shine-hover reveal" data-delay="50">
+            <div class="cert-icon"><i class="devicon-laravel-plain colored"></i></div>
+            <h3>PHP Laravel Training</h3>
+            <p>Bravo · 2023</p>
+            <a href="./Data/Laravel Training.jpeg" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+          <article class="cert-card glass-card shine-hover reveal" data-delay="100">
+            <div class="cert-icon"><i class="fab fa-php"></i></div>
+            <h3>Full Stack PHP Laravel Course</h3>
+            <p>Bravo · 2023</p>
+            <a href="./Data/Laravel Course.jpeg" class="cert-btn btn-ripple"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Skills & Tools</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+        </header>
+
+        <div class="skills-filter reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="database">Databases</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Backend -->
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend">
+            <div class="skill-header">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-bar"><span data-progress="95"></span></div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-spring-plain colored"></i>
+              <span>Spring Boot</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend" data-delay="60">
+            <div class="skill-header">
+              <i class="fas fa-plug"></i>
+              <span>REST APIs</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend">
+            <div class="skill-header">
+              <i class="fas fa-shield-alt"></i>
+              <span>Spring Security</span>
+            </div>
+            <div class="skill-bar"><span data-progress="88"></span></div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend" data-delay="30">
+            <div class="skill-header">
+              <i class="fas fa-database"></i>
+              <span>Hibernate/JPA</span>
+            </div>
+            <div class="skill-bar"><span data-progress="89"></span></div>
+            <span class="skill-percent">89%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="backend">
+            <div class="skill-header">
+              <i class="devicon-express-original colored"></i>
+              <span>Express.js</span>
+            </div>
+            <div class="skill-bar"><span data-progress="72"></span></div>
+            <span class="skill-percent">72%</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend">
+            <div class="skill-header">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-bar"><span data-progress="95"></span></div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-bar"><span data-progress="88"></span></div>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend">
+            <div class="skill-header">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-bar"><span data-progress="82"></span></div>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="frontend" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-angularjs-plain colored"></i>
+              <span>Angular</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card glass-card shine-hover reveal" data-category="database">
+            <div class="skill-header">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-bar"><span data-progress="95"></span></div>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="database" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="database" data-delay="60">
+            <div class="skill-header">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="skill-bar"><span data-progress="95"></span></div>
+            <span class="skill-percent">95%</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools">
+            <div class="skill-header">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-bar"><span data-progress="92"></span></div>
+            <span class="skill-percent">92%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools">
+            <div class="skill-header">
+              <i class="fas fa-paper-plane"></i>
+              <span>Postman</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="30">
+            <div class="skill-header">
+              <i class="fas fa-file-code"></i>
+              <span>Swagger</span>
+            </div>
+            <div class="skill-bar"><span data-progress="90"></span></div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-apache-plain colored"></i>
+              <span>Maven</span>
+            </div>
+            <div class="skill-bar"><span data-progress="82"></span></div>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools">
+            <div class="skill-header">
+              <i class="fas fa-cogs"></i>
+              <span>Gradle</span>
+            </div>
+            <div class="skill-bar"><span data-progress="78"></span></div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="30">
+            <div class="skill-header">
+              <i class="fas fa-memory"></i>
+              <span>Redis</span>
+            </div>
+            <div class="skill-bar"><span data-progress="70"></span></div>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="60">
+            <div class="skill-header">
+              <i class="fas fa-vial"></i>
+              <span>JUnit</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools">
+            <div class="skill-header">
+              <i class="fas fa-flask"></i>
+              <span>Mockito</span>
+            </div>
+            <div class="skill-bar"><span data-progress="75"></span></div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="tools" data-delay="30">
+            <div class="skill-header">
+              <i class="fas fa-sync-alt"></i>
+              <span>CI/CD</span>
+            </div>
+            <div class="skill-bar"><span data-progress="72"></span></div>
+            <span class="skill-percent">72%</span>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-card glass-card shine-hover reveal" data-category="languages">
+            <div class="skill-header">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="languages" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-php-plain colored"></i>
+              <span>PHP</span>
+            </div>
+            <div class="skill-bar"><span data-progress="85"></span></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="languages" data-delay="60">
+            <div class="skill-header">
+              <i class="devicon-laravel-plain colored"></i>
+              <span>Laravel</span>
+            </div>
+            <div class="skill-bar"><span data-progress="82"></span></div>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="languages">
+            <div class="skill-header">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-bar"><span data-progress="85"></span></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card glass-card shine-hover reveal" data-category="languages" data-delay="30">
+            <div class="skill-header">
+              <i class="devicon-c-plain colored"></i>
+              <span>C</span>
+            </div>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Services</span>
+          <h2 class="section-title">What I <span class="gradient-text">Offer</span></h2>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card glass-card shine-hover reveal">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <p>Robust server-side applications with Java, Spring Boot, and clean architecture patterns.</p>
+          </article>
+          <article class="service-card glass-card shine-hover reveal" data-delay="80">
+            <div class="service-icon"><i class="fas fa-plug"></i></div>
+            <h3>REST API Development</h3>
+            <p>Well-documented, versioned RESTful APIs designed for performance and scalability.</p>
+          </article>
+          <article class="service-card glass-card shine-hover reveal" data-delay="160">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Design</h3>
+            <p>Normalized schemas, optimized queries, and efficient data modeling with MySQL & MongoDB.</p>
+          </article>
+          <article class="service-card glass-card shine-hover reveal" data-delay="80">
+            <div class="service-icon"><i class="fas fa-lock"></i></div>
+            <h3>Authentication & Security</h3>
+            <p>JWT-based auth, role-based access control, and Spring Security implementations.</p>
+          </article>
+          <article class="service-card glass-card shine-hover reveal" data-delay="160">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Full Stack Web Development</h3>
+            <p>End-to-end solutions from database to responsive frontend interfaces.</p>
+          </article>
+          <article class="service-card glass-card shine-hover reveal" data-delay="240">
+            <div class="service-icon"><i class="fas fa-link"></i></div>
+            <h3>API Integration</h3>
+            <p>Third-party service integration, webhooks, and seamless system connectivity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        </header>
+
+        <div class="projects-filter reveal">
+          <button class="project-filter-btn active" data-project-filter="all">All</button>
+          <button class="project-filter-btn" data-project-filter="java">Java</button>
+          <button class="project-filter-btn" data-project-filter="spring">Spring Boot</button>
+          <button class="project-filter-btn" data-project-filter="security">Security</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal tilt-card" data-tags="java spring security">
+            <div class="project-image">
+              <!-- Add project image -->
+              <div class="project-placeholder">
+                <i class="fas fa-hospital"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-overlay-content">
+                  <!-- Add live demo link -->
+                  <a href="https://github.com/Ayman2004iu/HospitalApplication" class="project-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                  <!-- Add GitHub repo -->
+                  <a href="https://github.com/Ayman2004iu/HospitalApplication" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Hospital Management System</h3>
+              <p>Secure REST APIs with role-based authentication and patient/doctor management.</p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>Spring Security</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ayman2004iu/HospitalApplication" class="btn btn-sm btn-primary btn-ripple">Live Demo</a>
+                <a href="https://github.com/Ayman2004iu/HospitalApplication" class="btn btn-sm btn-outline btn-ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt-card" data-delay="100" data-tags="java spring security">
+            <div class="project-image">
+              <!-- Add project image -->
+              <div class="project-placeholder">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-overlay-content">
+                  <a href="https://github.com/Ayman2004iu/MiniBank-Application" class="project-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/Ayman2004iu/MiniBank-Application" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Mini Banking System</h3>
+              <p>Banking APIs for deposits, withdrawals, transfers, and authentication.</p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>Spring Security</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ayman2004iu/MiniBank-Application" class="btn btn-sm btn-primary btn-ripple">Live Demo</a>
+                <a href="https://github.com/Ayman2004iu/MiniBank-Application" class="btn btn-sm btn-outline btn-ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt-card" data-delay="200" data-tags="java spring security">
+            <div class="project-image">
+              <!-- Add project image -->
+              <div class="project-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-overlay-content">
+                  <a href="https://github.com/Ayman2004iu/Ecommerce-Application" class="project-link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                  <a href="https://github.com/Ayman2004iu/Ecommerce-Application" class="project-link" aria-label="GitHub repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>E-Commerce System</h3>
+              <p>Product management, shopping cart, order processing, and secure authentication.</p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+                <span>Spring Security</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ayman2004iu/Ecommerce-Application" class="btn btn-sm btn-primary btn-ripple">Live Demo</a>
+                <a href="https://github.com/Ayman2004iu/Ecommerce-Application" class="btn btn-sm btn-outline btn-ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+        </header>
+
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-track" id="testimonial-track">
+            <div class="testimonial-slide active">
+              <div class="testimonial-card glass-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>
+                  Ayman delivered exceptional backend APIs for our platform. His attention to
+                  security and clean architecture made integration seamless. Highly recommended.
+                </p>
+                <div class="testimonial-author">
+                  <!-- Replace with client profile image -->
+                  <div class="author-avatar"><i class="fas fa-user"></i></div>
+                  <div>
+                    <h4>Sarah Mitchell</h4>
+                    <span>Product Manager · TechStart</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>
+                  Working with Ayman on our Laravel project was a great experience. He learns
+                  quickly, writes maintainable code, and always meets deadlines with quality.
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"><i class="fas fa-user"></i></div>
+                  <div>
+                    <h4>Ahmed Hassan</h4>
+                    <span>Senior Developer · Bravo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card glass-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>
+                  As his mentor, I've seen Ayman grow into a disciplined backend engineer.
+                  His Spring Boot projects demonstrate real-world readiness and strong fundamentals.
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar"><i class="fas fa-user"></i></div>
+                  <div>
+                    <h4>Dr. Mohamed Ali</h4>
+                    <span>Faculty Mentor · Zagazig University</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-btn prev" id="testimonial-prev" aria-label="Previous testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots" id="testimonial-dots"></div>
+            <button class="testimonial-btn next" id="testimonial-next" aria-label="Next testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-card glass-card shine-hover">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:ayman.ibrahim.seddik@gmail.com">ayman.ibrahim.seddik@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card glass-card shine-hover">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <a href="https://wa.me/201091154830">+20 1091154830</a>
+              </div>
+            </div>
+            <div class="contact-card glass-card shine-hover">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Zagazig, Sharqia, Egypt</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <!-- Add GitHub link -->
+              <a href="https://github.com/Ayman2004iu" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <!-- Add LinkedIn link -->
+              <a href="https://linkedin.com/in/ayman-ibrahim-8b48aa28a" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:ayman.ibrahim.seddik@gmail.com?subject=Job%20Opportunity&body=Hello%20Ayman,%20I%20saw%20your%20portfolio" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <!-- Google Maps placeholder -->
+            <div class="map-placeholder glass-card" aria-label="Map placeholder">
+              <i class="fas fa-map"></i>
+              <span>Google Maps Embed</span>
+              <p>Replace with your Google Maps iframe</p>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card reveal" data-delay="150" id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder=" ">
+              <label for="name">Your Name</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder=" ">
+              <label for="email">Your Email</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required placeholder=" ">
+              <label for="subject">Subject</label>
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+              <label for="message">Your Message</label>
+              <span class="form-line"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-ripple btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">Ayman<span>.</span></a>
+        <p>Backend Developer crafting scalable APIs &amp; secure systems.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-wrap">
+        <h4>Connect</h4>
+        <div class="footer-social">
+          <a href="https://github.com/Ayman2004iu" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/ayman-ibrahim-8b48aa28a" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:ayman.ibrahim.seddik@gmail.com?subject=Job%20Opportunity&body=Hello%20Ayman,%20I%20saw%20your%20portfolio" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Ayman Ibrahim Seddik. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
